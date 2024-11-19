@@ -1,0 +1,64 @@
+.logo-img {
+    width:300px;
+}
+
+.header-div {
+    display:flex;
+    justify-content: space-between;
+    border: 1px solid;
+    margin:10px;
+    background-color: black;
+}
+
+.body-div {
+    margin:10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 1%;
+}
+.product{
+    margin: 1% 0%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.card-footer{
+    background-color: transparent;
+    border: none;
+    border-top: 1px solid #dddada;
+}
+.nav-items > ul {
+    display: flex;
+    list-style-type: none;
+    
+}
+
+.nav-items > ul > li {
+    padding: 20px;
+}
+
+.res-logo {
+    width: 95%;
+}
+
+.res-card {
+    border:1px solid;
+    width:150px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+
+}
+
+.res-container {
+    display:flex;
+    flex-wrap: wrap;
+}
+.shimmer-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.shimmer-card {
+    width: 200px;
+    height:300px;
+    color: lightgrey;
+}

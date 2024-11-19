@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@coreui/coreui": "^5.2.0",
+    "@coreui/react": "^5.4.1",
+    "axios": "^1.7.7",
+    "bootstrap": "^5.3.3",
+    "react": "^18.3.1",
+    "react-bootstrap": "^2.10.5",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "name": "ipfsupplements",
+  "version": "1.0.0",
+  "description": "ipf supplements catalog from google sheet",
+  "main": "App.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyan3805/ipf_supplements.git"
+  },
+  "keywords": [
+    "iron",
+    "paradise",
+    "vizag",
+    "supplements",
+    "catalog"
+  ],
+  "author": "satya.n.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/satyan3805/ipf_supplements/issues"
+  },
+  "homepage": "https://github.com/satyan3805/ipf_supplements#readme"
+}
