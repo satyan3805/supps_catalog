@@ -10,7 +10,7 @@ import {
   CImage,
 } from "@coreui/react";
 
-const ProductDisplay = () => {
+const ProductDisplay = (props) => {
   return (
     <div className="product">
       <CCard
@@ -49,11 +49,12 @@ const ProductDisplay = () => {
           </CCarouselItem>
         </CCarousel>
         <CCardBody>
-          <CCardTitle>Run Whey PRO</CCardTitle>
+          {console.log(props) }
+          <CCardTitle>{props.prodInfo.Product_Name}</CCardTitle>
           <CCardText className="w-100 d-flex justify-content-between">
-            <span>RUN</span> | <span>2KG</span> |<span>Chocolate</span>
+            <span>{props.prodInfo.Product_Brand}</span> | <span>{props.prodInfo.Product_Weight}</span> |<span>{props.prodInfo.Flavour}</span>
           </CCardText>
-          <CCardFooter className="card-footer">Rs. 5,500.00</CCardFooter>
+          <CCardFooter className="card-footer">Rs. {props.prodInfo.MRP}</CCardFooter>
         </CCardBody>
       </CCard>
     </div>

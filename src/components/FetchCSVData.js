@@ -50,6 +50,7 @@ export default function FetchCSVData(props) {
         console.log(WeightManagementCatArr);
         console.log(HealthAndVitaminsCatArr);
         console.log(GainerCatArr);
+        
       })
       .catch((error) => {
         console.error("Error fetching CSV data:", error);
