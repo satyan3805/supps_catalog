@@ -11,6 +11,9 @@ import {
 } from "@coreui/react";
 
 const ProductDisplay = (props) => {
+  let imgFolderName = "../images/supp_images/"+props.prodInfo.Image_group_id;
+
+  console.log("img_folder-name: "+imgFolderName);
   return (
     <div className="product">
       <CCard
@@ -19,34 +22,28 @@ const ProductDisplay = (props) => {
           padding: 10,
         }}
       >
+        
         <CCarousel controls indicators>
-          <CCarouselItem>
-            <CImage
-              className="d-block w-100"
-              src={
-                "https://coreui.io/react/docs/static/react-83088efde08a5dedde9f67a954cb4b5b.jpg"
-              }
-              alt="slide 1"
-            />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage
-              className="d-block w-100"
-              src={
-                "https://coreui.io/react/docs/static/vue-8a74d93fde1a02c247304291cce46797.jpg"
-              }
-              alt="slide 2"
-            />
-          </CCarouselItem>
-          <CCarouselItem>
-            <CImage
-              className="d-block w-100"
-              src={
-                "https://coreui.io/react/docs/static/angular-2f3764e2ec8b0b47ebe68f2f80260ef1.jpg"
-              }
-              alt="slide 3"
-            />
-          </CCarouselItem>
+        <CCarouselItem>
+          <CImage
+            className="d-block w-100"
+            src={"https://supplements.ipfgym.com/supp_images/"+props.prodInfo.Image_group_id+"/1.webp"}
+          />
+        </CCarouselItem>
+        <CCarouselItem>
+          <CImage
+            className="d-block w-100"
+            src={"https://supplements.ipfgym.com/supp_images/"+props.prodInfo.Image_group_id+"/2.webp"}
+          />
+        </CCarouselItem>
+        <CCarouselItem>
+          <CImage
+            className="d-block w-100"
+            src={"https://supplements.ipfgym.com/supp_images/"+props.prodInfo.Image_group_id+"/3.webp"}
+          />
+        </CCarouselItem>
+          
+          
         </CCarousel>
         <CCardBody>
           {console.log(props) }
@@ -59,6 +56,5 @@ const ProductDisplay = (props) => {
       </CCard>
     </div>
   );
-};
-
+}
 export default ProductDisplay;

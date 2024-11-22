@@ -19,6 +19,17 @@ const Body = () => {
       .get(csvUrl) // Use Axios to fetch the CSV data
       .then((response) => {
         const parsedCsvData = parseCSV(response.data); // Parse the CSV data into an array of objects
+        parsedCsvData.map(item => {
+          const imgArr=[
+          "../images/supp_images/"+item.Image_group_id+"/1.webp",
+          "../images/supp_images/"+item.Image_group_id+"/2.webp",
+          "../images/supp_images/"+item.Image_group_id+"/3.webp"
+          ];
+          item['imgList']=imgArr;
+      
+          return item;
+      })
+        
         setCsvData(parsedCsvData); // Set the fetched data in the component's state
         console.log(parsedCsvData); // Now you can work with 'csvData' in your component's state.
 
@@ -78,6 +89,7 @@ const Body = () => {
   return (
     <div className="body-div">
         {csvData.map((prod) => (
+          
           <ProductDisplay key={prod.Product_ID} prodInfo={prod}/>
         ))}
     </div>
