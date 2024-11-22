@@ -27,19 +27,19 @@ const ProductDisplay = (props) => {
         <CCarouselItem>
           <CImage
             className="d-block w-100"
-            src={"https://supplements.ipfgym.com/supp_images/"+props.prodInfo.Image_group_id+"/1.webp"}
+            src={"../images/supp_images/"+props.prodInfo.Image_group_id+"/1.webp"}
           />
         </CCarouselItem>
         <CCarouselItem>
           <CImage
             className="d-block w-100"
-            src={"https://supplements.ipfgym.com/supp_images/"+props.prodInfo.Image_group_id+"/2.webp"}
+            src={"../images/supp_images/"+props.prodInfo.Image_group_id+"/2.webp"}
           />
         </CCarouselItem>
         <CCarouselItem>
           <CImage
             className="d-block w-100"
-            src={"https://supplements.ipfgym.com/supp_images/"+props.prodInfo.Image_group_id+"/3.webp"}
+            src={"../images/supp_images/"+props.prodInfo.Image_group_id+"/3.webp"}
           />
         </CCarouselItem>
           
