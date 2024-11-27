@@ -16,7 +16,6 @@
   "name": "ipfsupplements",
   "version": "1.0.0",
   "description": "ipf supplements catalog from google sheet",
-  "main": "App.js",
   "scripts": {
     "test": "jest"
   },
