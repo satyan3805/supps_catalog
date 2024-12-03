@@ -8,6 +8,8 @@
     border: 1px solid;
     margin:10px;
     background-color: black;
+    position: sticky;
+    top: 0px;
 }
 
 .body-div {
@@ -68,4 +70,25 @@
 }
 .product-title{
     height: 50px;
+}
+.collapse-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.accord-header{
+    position: sticky;
+    top: 100px;
+    padding: 10px 16px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.accord-header+.sticky {
+    padding-top: 150px;
 }
